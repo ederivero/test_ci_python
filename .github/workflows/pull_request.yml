@@ -6,6 +6,9 @@ on:
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
     steps:
       - name: Validar el repositorio
         uses: actions/checkout@v3
