@@ -12,7 +12,7 @@ from correos import olvide_password
 from cryptography.fernet import Fernet
 from os import environ
 from dotenv import load_dotenv
-print('hola')
+
 load_dotenv()
 
 app = Flask(__name__)
