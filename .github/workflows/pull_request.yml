@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: Validar el repositorio
         uses: actions/checkout@v3
+
+      - name: Validar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10.7"
+          architecture: "x64"
