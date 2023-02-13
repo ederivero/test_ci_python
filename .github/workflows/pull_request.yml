@@ -1,0 +1,11 @@
+name: worflow-pullrequest
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validar el repositorio
+        uses: actions/checkout@v3
